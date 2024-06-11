@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -68,6 +69,12 @@ public class BaseClass {
 		// Open the URL specified in the config properties
 		driver.get(config.getProperty("url"));
 
+	}
+	
+	@AfterSuite
+	public void tearDown()
+	{
+		driver.quit();
 	}
 
 }
