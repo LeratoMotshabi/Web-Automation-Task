@@ -28,9 +28,9 @@ selenium-test-automation-framework/
 |   |       |   `-- webTable.java
 |	|		|-- testCases
 |	|			`-- UserListTableTestCase
-|   | |-- Utilities/
-|   |       |   `-- extentManager.java
-|	|		|	`-- DataProviders
+| |   |-- Utilities/
+| |   |   `-- extentManager.java
+|	|		|	  `-- DataProviders
 |   |-- src/
 |   |   -- test/
 |   		-- resources/
